@@ -30,7 +30,7 @@ class ItemsController < ApplicationController
   def destroy
     @item = Item.find(params[:id])
     @item.destroy
-    redirect_to items_pash
+    redirect_to items_path
   end
 
   private
